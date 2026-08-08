@@ -1,0 +1,32 @@
+# Ghidra projects / analysis artifacts
+*.gpr
+*.rep/
+.ghidra/
+ghidra_*/
+/tmp/ghidra-proj/
+
+# Reverse-engineering / build scratch
+*.o
+*.a
+*.so
+*.out
+target-binary
+build-O0/
+build-O2/
+
+# ast-outline / graphify caches
+.ast-outline/
+graphify-out/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/

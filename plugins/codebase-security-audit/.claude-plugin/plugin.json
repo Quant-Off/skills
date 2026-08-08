@@ -1,0 +1,20 @@
+{
+  "name": "codebase-security-audit",
+  "description": "Audits a codebase or file for exploitable vulnerabilities across injection, authorization, secrets, memory safety, deserialization, SSRF, and dependency risk, gating every candidate through six reachability and impact reviews before reporting. Not for deep crypto review or binary verification.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Quant-Off",
+    "url": "https://github.com/Quant-Off"
+  },
+  "homepage": "https://github.com/Quant-Off/skills/tree/main/plugins/codebase-security-audit",
+  "repository": "https://github.com/Quant-Off/skills",
+  "license": "MIT",
+  "keywords": [
+    "security-audit",
+    "zero-trust",
+    "sast",
+    "vulnerability",
+    "false-positive-filtering",
+    "code-review"
+  ]
+}

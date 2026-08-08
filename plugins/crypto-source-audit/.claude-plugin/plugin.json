@@ -1,0 +1,20 @@
+{
+  "name": "crypto-source-audit",
+  "description": "Audits cryptographic source for timing side channels, missing secret zeroization, non-constant-time comparison, and weak randomness. Use when reviewing crypto primitives, key handling, or any code touching secret material. Not for binary verification or general vulnerability hunting.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Quant-Off",
+    "url": "https://github.com/Quant-Off"
+  },
+  "homepage": "https://github.com/Quant-Off/skills/tree/main/plugins/crypto-source-audit",
+  "repository": "https://github.com/Quant-Off/skills",
+  "license": "MIT",
+  "keywords": [
+    "cryptography",
+    "constant-time",
+    "zeroization",
+    "side-channel",
+    "timing-attack",
+    "audit"
+  ]
+}

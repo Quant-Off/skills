@@ -1,0 +1,20 @@
+{
+  "name": "binary-crypto-verify",
+  "description": "Verifies in compiled machine code that secret zeroization survived dead-store elimination and that constant-time logic did not regain secret-dependent branches. Ships a Ghidra headless inventory script. Use when auditing a binary, shared object, or firmware image against a source-level guarantee.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Quant-Off",
+    "url": "https://github.com/Quant-Off"
+  },
+  "homepage": "https://github.com/Quant-Off/skills/tree/main/plugins/binary-crypto-verify",
+  "repository": "https://github.com/Quant-Off/skills",
+  "license": "MIT",
+  "keywords": [
+    "ghidra",
+    "reverse-engineering",
+    "constant-time",
+    "zeroization",
+    "binary-analysis",
+    "dead-store-elimination"
+  ]
+}

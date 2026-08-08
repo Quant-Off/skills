@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json.schemastore.org/claude-marketplace.json",
+  "name": "quant-security",
+  "owner": {
+    "name": "Quant-Off",
+    "url": "https://github.com/Quant-Off"
+  },
+  "description": "Security-research toolkit for Claude Code: source-level cryptographic auditing, Ghidra-driven binary verification of constant-time and zeroization guarantees, and zero-trust codebase security auditing. Every skill gates findings on traced evidence before reporting.",
+  "plugins": [
+    {
+      "name": "crypto-source-audit",
+      "source": "./plugins/crypto-source-audit",
+      "description": "Audits cryptographic source for timing side channels, missing secret zeroization, non-constant-time comparison, and weak randomness. Use when reviewing crypto primitives, key handling, or any code touching secret material. Not for binary verification or general vulnerability hunting.",
+      "version": "0.2.0",
+      "author": {
+        "name": "Quant-Off",
+        "url": "https://github.com/Quant-Off"
+      },
+      "homepage": "https://github.com/Quant-Off/skills/tree/main/plugins/crypto-source-audit",
+      "repository": "https://github.com/Quant-Off/skills",
+      "license": "MIT",
+      "category": "security",
+      "keywords": [
+        "cryptography",
+        "constant-time",
+        "zeroization",
+        "side-channel",
+        "timing-attack",
+        "audit"
+      ]
+    },
+    {
+      "name": "binary-crypto-verify",
+      "source": "./plugins/binary-crypto-verify",
+      "description": "Verifies in compiled machine code that secret zeroization survived dead-store elimination and that constant-time logic did not regain secret-dependent branches. Ships a Ghidra headless inventory script. Use when auditing a binary, shared object, or firmware image against a source-level guarantee.",
+      "version": "0.2.0",
+      "author": {
+        "name": "Quant-Off",
+        "url": "https://github.com/Quant-Off"
+      },
+      "homepage": "https://github.com/Quant-Off/skills/tree/main/plugins/binary-crypto-verify",
+      "repository": "https://github.com/Quant-Off/skills",
+      "license": "MIT",
+      "category": "security",
+      "keywords": [
+        "ghidra",
+        "reverse-engineering",
+        "constant-time",
+        "zeroization",
+        "binary-analysis",
+        "dead-store-elimination"
+      ]
+    },
+    {
+      "name": "codebase-security-audit",
+      "source": "./plugins/codebase-security-audit",
+      "description": "Audits a codebase or file for exploitable vulnerabilities across injection, authorization, secrets, memory safety, deserialization, SSRF, and dependency risk, gating every candidate through six reachability and impact reviews before reporting. Not for deep crypto review or binary verification.",
+      "version": "0.2.0",
+      "author": {
+        "name": "Quant-Off",
+        "url": "https://github.com/Quant-Off"
+      },
+      "homepage": "https://github.com/Quant-Off/skills/tree/main/plugins/codebase-security-audit",
+      "repository": "https://github.com/Quant-Off/skills",
+      "license": "MIT",
+      "category": "security",
+      "keywords": [
+        "security-audit",
+        "zero-trust",
+        "sast",
+        "vulnerability",
+        "false-positive-filtering",
+        "code-review"
+      ]
+    }
+  ]
+}
