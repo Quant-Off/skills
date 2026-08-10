@@ -43,6 +43,7 @@ Add the marketplace to your Claude Code environment with the commands below. You
 /plugin install crypto-source-audit@quant-security
 /plugin install binary-crypto-verify@quant-security
 /plugin install codebase-security-audit@quant-security
+/plugin install ...
 ```
 
 `quant-security` is the name of this marketplace (defined in `.claude-plugin/marketplace.json`). Each plugin lives under `plugins/<name>` in this repository. Manage your installs as follows.
